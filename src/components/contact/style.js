@@ -8,6 +8,7 @@ export const Footer = styled.footer`
   height: 150px;
   gap:10px;
   background-color:#4152a0;
+  color:${({theme})=> theme.standardColor};
 `
 export const Network = styled.div`
  display: flex;
@@ -15,6 +16,6 @@ export const Network = styled.div`
 
  svg{
    font-size: 30px;
-   color: #fff;
+   color:${({theme})=> theme.standardColor};
   }
 `

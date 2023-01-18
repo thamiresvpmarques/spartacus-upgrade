@@ -1,6 +1,7 @@
 import { Header } from "../header";
 import * as Styled from "./style";
 
+
 export const Home = () => {
   return (
     <Styled.Section>

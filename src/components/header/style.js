@@ -12,7 +12,9 @@ export const Nav = styled.nav`
   position: fixed;
   top:0;
   transition: 0.5s;
+  background-color: ${(props) => (props.headerColor)};
 `;
+
 export const Logo = styled.img`
   width: 150px;
   cursor: pointer;
@@ -34,7 +36,7 @@ export const Options = styled.li`
     margin-left: 40px;
 }
   a:hover{
-    color: #FDC93B;
+    color: ${({theme}) => theme.hover};
   }
   
 `

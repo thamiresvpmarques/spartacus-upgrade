@@ -7,7 +7,9 @@ export const Section = styled.section`
  justify-content: center;
  height: 850px;
  width: 100%;
- 
+  h2{
+    color:${({theme}) => theme.mainColor}
+  }
 
 `
 export const TitleContainer = styled.div`

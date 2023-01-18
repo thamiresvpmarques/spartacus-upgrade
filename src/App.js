@@ -1,18 +1,12 @@
-import { Home } from "./components/home";
-import { Essence } from "./components/essence";
-import { Missions } from "./components/missions";
-import { Form } from "./components/form";
-import { Contact } from "./components/contact";
+import { ThemeProvider } from "styled-components";
+import { Theme } from "./styles/theme";
+import { AppRouter } from "./pages/routes";
 
 function App() {
   return (
-    <>
-      <Home />
-      <Essence />
-      <Missions/>
-      <Form/>
-      <Contact/>
-    </>
+    <ThemeProvider theme={Theme}>
+     <AppRouter/>
+    </ThemeProvider>
   );
 }
 
