@@ -6,16 +6,16 @@ export const Footer = styled.footer`
   justify-content: center;
   flex-direction: column;
   height: 150px;
-  gap:10px;
-  background-color:#4152a0;
-  color:${({theme})=> theme.standardColor};
-`
+  gap: 10px;
+  background-color: #4152a0;
+  color: ${({ theme }) => theme.standardColor};
+`;
 export const Network = styled.div`
- display: flex;
- gap:20px;
+  display: flex;
+  gap: 20px;
 
- svg{
-   font-size: 30px;
-   color:${({theme})=> theme.standardColor};
+  svg {
+    font-size: 30px;
+    color: ${({ theme }) => theme.standardColor};
   }
-`
+`;

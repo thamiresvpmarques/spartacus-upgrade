@@ -1,4 +1,5 @@
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Header } from "../components/header";
 import { ContactContainer } from "./contact";
 import { HomeContainer } from "./home";
 import { EssenceContainer } from "./essence";
@@ -8,6 +9,7 @@ import { MissionsContainer } from "./missions";
 export const AppRouter = () => {
   return (
     <BrowserRouter>
+      <Header/>
       <Routes>
         <Route exact path="/" element={<HomeContainer />} />
         <Route exact path="/essence" element={<EssenceContainer />} />

@@ -6,24 +6,34 @@ export const Section = styled.section`
   background: linear-gradient(rgb(40, 42, 53, 0.9), rgb(40, 42, 53, 0.9)),
     url(${BackgroundImg});
   width: 100%;
-  height: 100vh;
   background-size: cover;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  
+  height: calc(100vh - 106px);
+
+  @media screen and (max-width: 992px) {
+    height: 925px
+
+  }
 `;
 export const Title = styled.h2`
   color: #fff;
   letter-spacing: 1px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 3em;
+  font-weight: 400;
 
   strong {
-    color: ${({theme}) =>theme.secondaryColor};
+    color: ${({ theme }) => theme.secondaryColor};
+    font-weight: 400;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2em;
+    margin-top: 30px;
   }
 `;
 export const Paragraph = styled.p`
@@ -41,6 +51,7 @@ export const Btn = styled.a`
   border-radius: 50px;
   margin-top: 30px;
   transition: 0.25s;
+  font-weight: 300;
   color: #fff;
   background-color: #ef8226;
   transition: 0.3s ease;

@@ -5,7 +5,7 @@ import { AppRouter } from "./pages/routes";
 function App() {
   return (
     <ThemeProvider theme={Theme}>
-     <AppRouter/>
+      <AppRouter />
     </ThemeProvider>
   );
 }
