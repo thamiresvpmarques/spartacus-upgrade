@@ -80,12 +80,12 @@ export const Header = styled.nav`
 
     input:checked ~ ul {
       display: flex;
-      height: 100vh;
+      height: 90vh;
       width: 100vw;
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      margin-top: 45px;
+      margin-top: 20px;
     }
 
     nav {
